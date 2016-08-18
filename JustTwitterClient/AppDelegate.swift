@@ -56,3 +56,11 @@ func delay(delay:Double, closure:()->()) {
         ),
         dispatch_get_main_queue(), closure)
 }
+
+extension String
+{
+    func replace(target: String, withString: String) -> String
+    {
+        return self.stringByReplacingOccurrencesOfString(target, withString: withString, options: NSStringCompareOptions.LiteralSearch, range: nil)
+    }
+}

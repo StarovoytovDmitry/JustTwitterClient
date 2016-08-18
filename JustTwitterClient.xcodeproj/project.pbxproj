@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		6C46B14715012F6C2915EE03 /* Pods_JustTwitterClient.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 29EE4B91CA672491187910DF /* Pods_JustTwitterClient.framework */; };
+		6C46B14715012F6C2915EE03 /* Pods_JustTwitterClient.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 29EE4B91CA672491187910DF /* Pods_JustTwitterClient.framework */; settings = {ATTRIBUTES = (Required, ); }; };
 		B703E5DF1D6513A700A565F0 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B703E5DE1D6513A700A565F0 /* HomeViewController.swift */; };
 		B78413A31D64F275008EFC96 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = B78413A21D64F275008EFC96 /* User.swift */; };
 		B78413A51D64F2B1008EFC96 /* TwitterClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = B78413A41D64F2B1008EFC96 /* TwitterClient.swift */; };
@@ -18,6 +18,11 @@
 		B7B171F51D64D26F00F0669B /* SplashViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7B171F41D64D26F00F0669B /* SplashViewController.swift */; };
 		B7B171F71D64DB9D00F0669B /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7B171F61D64DB9D00F0669B /* LoginViewController.swift */; };
 		B7B171F91D64DEE000F0669B /* TwitterLoginDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7B171F81D64DEE000F0669B /* TwitterLoginDelegate.swift */; };
+		B7B9A08E1D65C0BD0030E9AF /* DOFavoriteButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7B9A08D1D65C0BD0030E9AF /* DOFavoriteButton.swift */; };
+		B7B9A0911D65C7530030E9AF /* Tweet.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7B9A0901D65C7530030E9AF /* Tweet.swift */; };
+		B7EDD18E1D65EADC0095537F /* TweetCompactCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7EDD18D1D65EADC0095537F /* TweetCompactCell.swift */; };
+		B7EDE2141D65CA4D00DCBBD2 /* BDBOAuth1Manager.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B7EDE2131D65CA4D00DCBBD2 /* BDBOAuth1Manager.framework */; };
+		B7EDE2161D65E6EF00DCBBD2 /* TweetCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7EDE2151D65E6EF00DCBBD2 /* TweetCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -35,6 +40,11 @@
 		B7B171F41D64D26F00F0669B /* SplashViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SplashViewController.swift; sourceTree = "<group>"; };
 		B7B171F61D64DB9D00F0669B /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		B7B171F81D64DEE000F0669B /* TwitterLoginDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TwitterLoginDelegate.swift; sourceTree = "<group>"; };
+		B7B9A08D1D65C0BD0030E9AF /* DOFavoriteButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DOFavoriteButton.swift; sourceTree = "<group>"; };
+		B7B9A0901D65C7530030E9AF /* Tweet.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Tweet.swift; sourceTree = "<group>"; };
+		B7EDD18D1D65EADC0095537F /* TweetCompactCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TweetCompactCell.swift; sourceTree = "<group>"; };
+		B7EDE2131D65CA4D00DCBBD2 /* BDBOAuth1Manager.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = BDBOAuth1Manager.framework; path = "Pods/../build/Debug-iphoneos/BDBOAuth1Manager/BDBOAuth1Manager.framework"; sourceTree = "<group>"; };
+		B7EDE2151D65E6EF00DCBBD2 /* TweetCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TweetCell.swift; sourceTree = "<group>"; };
 		D9695FA133DAFA8B65534777 /* Pods-JustTwitterClient.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JustTwitterClient.release.xcconfig"; path = "Pods/Target Support Files/Pods-JustTwitterClient/Pods-JustTwitterClient.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -43,6 +53,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B7EDE2141D65CA4D00DCBBD2 /* BDBOAuth1Manager.framework in Frameworks */,
 				6C46B14715012F6C2915EE03 /* Pods_JustTwitterClient.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -53,6 +64,7 @@
 		3B153BB9345ABDFB7F0579AD /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				B7EDE2131D65CA4D00DCBBD2 /* BDBOAuth1Manager.framework */,
 				29EE4B91CA672491187910DF /* Pods_JustTwitterClient.framework */,
 			);
 			name = Frameworks;
@@ -80,6 +92,8 @@
 		B78413A01D64F239008EFC96 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				B7EDE2151D65E6EF00DCBBD2 /* TweetCell.swift */,
+				B7EDD18D1D65EADC0095537F /* TweetCompactCell.swift */,
 				B7B171E61D64D10700F0669B /* Main.storyboard */,
 				B7B171E91D64D10700F0669B /* Assets.xcassets */,
 				B7B171EB1D64D10700F0669B /* LaunchScreen.storyboard */,
@@ -101,6 +115,7 @@
 			isa = PBXGroup;
 			children = (
 				B78413A21D64F275008EFC96 /* User.swift */,
+				B7B9A0901D65C7530030E9AF /* Tweet.swift */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -134,6 +149,7 @@
 		B7B171E11D64D10700F0669B /* JustTwitterClient */ = {
 			isa = PBXGroup;
 			children = (
+				B7B9A08F1D65C3DC0030E9AF /* Helper */,
 				B78413A61D64F2BA008EFC96 /* Model */,
 				B78413A01D64F239008EFC96 /* Views */,
 				B784139F1D64F20F008EFC96 /* Controllers */,
@@ -141,6 +157,14 @@
 				B78413A71D64F2E2008EFC96 /* API */,
 			);
 			path = JustTwitterClient;
+			sourceTree = "<group>";
+		};
+		B7B9A08F1D65C3DC0030E9AF /* Helper */ = {
+			isa = PBXGroup;
+			children = (
+				B7B9A08D1D65C0BD0030E9AF /* DOFavoriteButton.swift */,
+			);
+			name = Helper;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -265,9 +289,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B7B9A08E1D65C0BD0030E9AF /* DOFavoriteButton.swift in Sources */,
 				B7B171F91D64DEE000F0669B /* TwitterLoginDelegate.swift in Sources */,
+				B7EDD18E1D65EADC0095537F /* TweetCompactCell.swift in Sources */,
 				B7B171F71D64DB9D00F0669B /* LoginViewController.swift in Sources */,
+				B7B9A0911D65C7530030E9AF /* Tweet.swift in Sources */,
 				B7B171E31D64D10700F0669B /* AppDelegate.swift in Sources */,
+				B7EDE2161D65E6EF00DCBBD2 /* TweetCell.swift in Sources */,
 				B78413A31D64F275008EFC96 /* User.swift in Sources */,
 				B78413A51D64F2B1008EFC96 /* TwitterClient.swift in Sources */,
 				B703E5DF1D6513A700A565F0 /* HomeViewController.swift in Sources */,
@@ -385,6 +413,10 @@
 			baseConfigurationReference = 1A0721A6DC502164F05F7567 /* Pods-JustTwitterClient.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/build/Debug-iphoneos/BDBOAuth1Manager",
+				);
 				INFOPLIST_FILE = JustTwitterClient/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = Dmitry.JustTwitterClient;
@@ -397,6 +429,10 @@
 			baseConfigurationReference = D9695FA133DAFA8B65534777 /* Pods-JustTwitterClient.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/build/Debug-iphoneos/BDBOAuth1Manager",
+				);
 				INFOPLIST_FILE = JustTwitterClient/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = Dmitry.JustTwitterClient;
