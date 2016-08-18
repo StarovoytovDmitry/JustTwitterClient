@@ -77,8 +77,13 @@ class TwitterClient: BDBOAuth1SessionManager {
         }
     }
     //Get home timeline current user
-    func homeTimeline(success: ([Tweet]) -> (),  failyre: (NSError) -> ()) {
-        let params = ["count":10]
+    func homeTimeline(maxId: Int? = nil, success: ([Tweet]) -> (),  failyre: (NSError) -> ()) {
+        var params = ["count":10]
+        
+        if (maxId != nil) {
+            params["max_id"] = maxId
+        }
+        
         GET("1.1/statuses/home_timeline.json", parameters: params, progress: nil, success: { (task, response) in
             
             let dictionaries = response as! [NSDictionary]

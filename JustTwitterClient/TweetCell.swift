@@ -28,9 +28,9 @@ class TweetCell: UITableViewCell {
     
     var tweetID: NSNumber?
     
-    var indexPath: NSIndexPath!
+    weak var delegate: TwitterTableViewDelegate?
     
-    //weak var delegate: TwitterTableViewDelegate?
+    var indexPath: NSIndexPath!
     
     var tweetTextFontSize: CGFloat { get { return 15.0 } }
     var tweetTextFontWeight: CGFloat { get { return UIFontWeightRegular } }
@@ -74,7 +74,7 @@ class TweetCell: UITableViewCell {
                 displayUrls.append(displayurl)
             }
         }
-        /*
+        
         if let media = media {
             for medium in media {
                 let urltext = medium["url"] as! String
@@ -122,10 +122,10 @@ class TweetCell: UITableViewCell {
             
             tweetContentsLabel.attributedText = text
             
-            let tap1 = UITapGestureRecognizer(target: self, action: Selector("openProfile"))
+            let tap1 = UITapGestureRecognizer(target: self, action: #selector(TweetCell.openProfile))
             authorNameLabel.userInteractionEnabled = true
             authorNameLabel.addGestureRecognizer(tap1)
-        }*/
+        }
     }
     
     @IBAction func onRetweetButton(sender: DOFavoriteButton) {

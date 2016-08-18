@@ -98,7 +98,7 @@ class Tweet {
         
         return tweets
     }
-    /*
+    
     class func timeSince(date: NSDate) -> String {
         var unit = "s"
         var timeSince = abs(date.timeIntervalSinceNow as Double) // in seconds
@@ -129,6 +129,43 @@ class Tweet {
         let value = Int(timeSince)
         return "\(value)\(unit)"
     }
-    */
     
+    class func intervalTime(unit: String, value: Double) -> Bool {
+        let value = Int(round(value))
+        
+        switch unit {
+        case "s":
+            return value < 60
+        case "m":
+            return value < 60
+        case "h":
+            return value < 24
+        case "d":
+            return value < 7
+        case "w":
+            return value < 4
+        default:
+            return true
+        }
+    }
+    
+    class func localizedDate(date: NSDate) -> (unit: String, timeSince: Double) {
+        var unit = "/"
+        let formatter = NSDateFormatter()
+        formatter.dateFormat = "M"
+        let timeSince = Double(formatter.stringFromDate(date))!
+        formatter.dateFormat = "d/yy"
+        unit += formatter.stringFromDate(date)
+        return (unit, timeSince)
+    }
+    
+    class func localizedTimestamp(date: NSDate) -> String {
+        let (unit, timeSince) = localizedDate(date)
+        let value = Int(timeSince)
+        var l18n = "\(value)\(unit), "
+        let formatter = NSDateFormatter()
+        formatter.dateFormat = "h:mm a"
+        l18n += formatter.stringFromDate(date)
+        return l18n
+    }  
 }

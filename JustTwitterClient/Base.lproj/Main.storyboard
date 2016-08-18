@@ -169,7 +169,7 @@
             </objects>
             <point key="canvasLocation" x="1773" y="400"/>
         </scene>
-        <!--Home-->
+        <!--Home View Controller-->
         <scene sceneID="wBX-EG-JYD">
             <objects>
                 <viewController id="VbM-t8-4M6" customClass="HomeViewController" customModule="JustTwitterClient" customModuleProvider="target" sceneMemberID="viewController">
@@ -379,6 +379,8 @@
                                             <outlet property="authorScreennameLabel" destination="wlD-hX-xwc" id="ag9-ql-T9v"/>
                                             <outlet property="favoriteButton" destination="dVm-i6-qVn" id="6i7-Or-EAc"/>
                                             <outlet property="favoriteCountLabel" destination="LAo-Yy-apW" id="F4e-hf-HYL"/>
+                                            <outlet property="mediaImageHeightConstraint" destination="PyG-P8-l0W" id="qsk-lQ-IT7"/>
+                                            <outlet property="mediaImageVerticalSpacingConstraint" destination="UxU-LM-Wfk" id="TlH-Dj-oQx"/>
                                             <outlet property="mediaImageView" destination="WDm-Ac-KEH" id="bWc-Yr-Rj6"/>
                                             <outlet property="profilePictureImageView" destination="xUm-5d-6pZ" id="xX2-BA-ljC"/>
                                             <outlet property="retweetButton" destination="g6f-Xo-yPX" id="bxe-Ot-Mid"/>
@@ -402,7 +404,7 @@
                             <constraint firstItem="F0e-1n-LJf" firstAttribute="top" secondItem="rvf-OT-OyW" secondAttribute="topMargin" id="nGP-Fc-TOp"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" title="Home" id="THQ-cG-WQ4">
+                    <navigationItem key="navigationItem" id="THQ-cG-WQ4">
                         <barButtonItem key="leftBarButtonItem" style="plain" systemItem="compose" id="BPq-Qb-85J"/>
                         <barButtonItem key="rightBarButtonItem" systemItem="add" id="Ixx-zX-tHw"/>
                     </navigationItem>

@@ -20,7 +20,7 @@ class TweetCompactCell: TweetCell {
         
         retweetCountLabel.text = tweet.retweetsCount > 0 ? String(tweet.retweetsCount) : ""
         favoriteCountLabel.text = tweet.favoritesCount > 0 ? String(tweet.favoritesCount) : ""
-        //tweetAgeLabel.text = Tweet.timeSince(tweet.timestamp!)
+        tweetAgeLabel.text = Tweet.timeSince(tweet.timestamp!)
     }
     
 }
